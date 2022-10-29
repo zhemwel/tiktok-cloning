@@ -9,6 +9,7 @@ import useAuthStore from '../store/authStore'
 import { client } from '../utils/client'
 import { topics } from '../utils/constants'
 import { BASE_URL } from '../utils'
+import { Helmet } from 'react-helmet'
 
 const Upload = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -74,6 +75,10 @@ const Upload = () => {
 
     return (
         <div className="flex w-full h-full absolute left-0 top-[60px] mb-10 pt-10 lg:pt-20 bg-white justify-center">
+            <Helmet>
+                <title>Upload Video | Tiktok Clone</title>
+                <link rel="icon" href="/Z.jpg" />
+            </Helmet>
             <div className="bg-[#F8F8F8] rounded-lg h-[90vh] md:h-[70vh] w-[60%] flex gap-6 flex-wrap items-center p-6 mdd:p-14 pt-6 justify-around">
                 <div>
                     <div>

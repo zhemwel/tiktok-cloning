@@ -10,6 +10,7 @@ import NoResult from '../../components/NoResult'
 import { IUser, Video } from '../../types'
 import { BASE_URL } from '../../utils'
 import useAuthStore from '../../store/authStore'
+import { Helmet } from 'react-helmet'
 
 const Search = ({ videos }: { videos: Video[] }) => {
     const [isAccounts, setIsAccounts] = useState(false)
@@ -34,6 +35,11 @@ const Search = ({ videos }: { videos: Video[] }) => {
 
     return (
         <div className="w-full">
+            <Helmet>
+                <title>Search | Tiktok Clone</title>
+                <link rel="icon" href="/Z.jpg" />
+            </Helmet>
+
             <div className="flex gap-10 mb-10 mt-2 border-gray-200 bg-white w-full justify-center">
                 <p
                     className={`text-xl font-semibold cursor-pointer mt-2 ${accounts}`}

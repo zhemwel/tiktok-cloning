@@ -7,6 +7,7 @@ import VideoCard from '../../components/VideoCard'
 import NoResult from '../../components/NoResult'
 import { IUser, Video } from '../../types'
 import { BASE_URL } from '../../utils'
+import { Helmet } from 'react-helmet'
 
 interface IProps {
     data: {
@@ -36,6 +37,11 @@ const Profile = ({ data }: IProps) => {
 
     return (
         <div className="w-full">
+            <Helmet>
+                <title>{user.userName.replace(/ /g, "").toLowerCase()} | Tiktok Clone</title>
+                <link rel="icon" href="/Z.jpg" />
+            </Helmet>
+
             <div className="flex gap-6 md:gap-10 mb-4 bg-white w-full">
                 <div className="w-16 h-16 md:w-32 md:h-32">
                     <Image
@@ -49,8 +55,8 @@ const Profile = ({ data }: IProps) => {
                 </div>
 
                 <div className="flex flex-col justify-center">
-                    <p className="md:text-2xl tracking-wider flex gap-1 items-center justify-center text-md font-bold text-primary capitalize">
-                        {user.userName}
+                    <p className="md:text-2xl tracking-wider flex gap-1 items-center justify-center text-md font-bold text-primary lowercase">
+                        {user.userName.replace(/ /g, "")}
                         <GoVerified className="text-blue-400" />
                     </p>
                     <p className="capitalize md:text-xl text-gray-400 text-xs">
