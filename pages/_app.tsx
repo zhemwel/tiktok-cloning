@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             <div className="xl:w-[1200px] m-auto overflow-hidden h-[100vh]">
                 <Helmet>
                     <title>Home | Tiktok Clone</title>
-                    <link rel="icon" href="/Z.jpg" />
+                    <link rel="icon" href="/Z.png" />
                 </Helmet>
 
                 <Navbar />

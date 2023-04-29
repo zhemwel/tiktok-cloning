@@ -39,7 +39,7 @@ const Profile = ({ data }: IProps) => {
         <div className="w-full">
             <Helmet>
                 <title>{user.userName.replace(/ /g, "").toLowerCase()} | Tiktok Clone</title>
-                <link rel="icon" href="/Z.jpg" />
+                <link rel="icon" href="/Z.png" />
             </Helmet>
 
             <div className="flex gap-6 md:gap-10 mb-4 bg-white w-full">

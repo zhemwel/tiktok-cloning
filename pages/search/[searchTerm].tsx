@@ -37,7 +37,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
         <div className="w-full">
             <Helmet>
                 <title>Search | Tiktok Clone</title>
-                <link rel="icon" href="/Z.jpg" />
+                <link rel="icon" href="/Z.png" />
             </Helmet>
 
             <div className="flex gap-10 mb-10 mt-2 border-gray-200 bg-white w-full justify-center">
